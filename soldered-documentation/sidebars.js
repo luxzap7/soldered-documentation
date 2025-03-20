@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'ACCELEROMETER-GYROSCOPE EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/accelerometer-gyroscope/accelerometer-gyroscope-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/accelerometer-gyroscope/accelerometer-gyroscope-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/accelerometer-gyroscope/accelerometer-gyroscope-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
