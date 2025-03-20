@@ -1,21 +1,19 @@
 ---
-slug: /accelerometer-gyroscope/overview
+slug: /lsm6ds3tr/overview
 title: Overview
-id: accelerometer-gyroscope-overview 
+id: lsm6ds3tr-overview 
 hide_title: False
 pagination_prev: null
 ---
-
-
 ## Accelerometer & Gyroscope LSM6DS3 6-DOF breakout
 
 **Accelerometer & Gyroscope - Breakout** is a compact board that integrates a **3D accelerometer** and a **3D gyroscope**, enabling tracking of linear acceleration and rotational motion. Thanks to high measurement resolutions (up to ±16 g and ±2000 dps), it is ideal for designing gesture-controlled robots, fitness trackers or drones. The board contains a built-in **temperature sensor** and **FIFO buffer** for efficient data management where its high resistance to mechanical shock makes LSM6DSO the preferred choice of system designers for creating and manufacturing reliable products.
-It also includes **2 Qwiic connectors**, making it easy to connect with microcontrollers. The easyC module connection system eliminates the risk of incorrect connections or damaged modules, ensuring a seamless setup experience while operating on supply voltages of **2.5V** to **3.6V** making it work with both **3.3V** and **5V** systems.
+It also includes **2 Qwiic (formerly easyC) connectors**, making it easy to connect with microcontrollers. The Qwiic module connection system eliminates the risk of incorrect connections or damaged modules, ensuring a seamless setup experience while operating on supply voltages of **2.5V** to **3.6V** making it work with both **3.3V** and **5V** systems.
 
 
 
 
-<CenteredImage src="/img/accelerometer-gyroscope/333115.jpg" alt="Accelerometer & Gyroscope LSM6DS3 6-DOF breakout" caption="Accelerometer & Gyroscope LSM6DS3 6-DOF breakout" />
+<CenteredImage src="/img/lsm6ds3tr/333115.jpg" alt="Accelerometer & Gyroscope LSM6DS3 6-DOF breakout" caption="Accelerometer & Gyroscope LSM6DS3 6-DOF breakout" />
 
 ---
 
@@ -60,4 +58,4 @@ It also includes **2 Qwiic connectors**, making it easy to connect with microcon
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
-/>  
+/> 

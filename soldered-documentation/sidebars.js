@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'LSM6DS3TR EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/lsm6ds3tr/lsm6ds3tr-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/lsm6ds3tr/lsm6ds3tr-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/lsm6ds3tr/lsm6ds3tr-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'ACCELEROMETER-GYROSCOPE EDIT THIS NAME',
           items: [
             {
