@@ -1,11 +1,11 @@
 ---
-slug: /lsm6ds3tr/arduino/examples 
+slug: /lsm6ds3tr/arduino/examples-accelerometer 
 title: Measuring linear acceleration with LSM6DS3 Accelerometer (example)
 id: lsm6ds3tr-arduino-2 
 hide_title: False
 ---
 
-This page contains some simple examples with function documentation on how to take measurements using the LSM6DS3 Accelerometer & Gyroscope.
+This page contains some simple examples with function documentation on how to take accelerometer measurements using the LSM6DS3 Accelerometer & Gyroscope.
 
 ---
 
@@ -50,27 +50,11 @@ void setup()
   parameters={[]}
 />
 
-## Configurating `setup()`
+---
 
-To start measuring velocity information we firstly need to setup the **serial monitor** and **configurate the IMU**.
+## Measuring acceleration 
 
-```cpp
-void setup()
-{
-    // Init serial communication
-    Serial.begin(115200);
-    delay(1000); // Relax...
-
-    // Call .begin() to configure the IMU
-    myIMU.begin();
-}
-```
-<FunctionDocumentation
-  functionName="myIMU.begin();"
-  description=" responsible for initializing the LSM6DS3 Accelerometer & Gyroscope sensor"
-  returnDescription="True: Initialization successful; the sensor is ready for use. False: Initialization failed; check wiring, power supply, or I2C address."
-  parameters={[]}
-/>
+To start measuring velocity information we firstly need read all 3 (x,y,z) directional vectors and display them as showed bellow.
 
 ```cpp
     // Read acceleration and print it on serial
@@ -84,3 +68,60 @@ void setup()
     Serial.print(myIMU.readFloatAccelZ(), 4);
     Serial.print(",");
 ```
+
+<FunctionDocumentation
+  functionName="(myIMU.readFloatAccel* (), 4);"
+  description="reads the acceleration value along the given axis from the LSM6DS3 sensor."
+  returnDescription="Returns a floating-point number in units of g (gravitational force)."
+  parameters={[]}
+/>
+
+---
+
+## Full example
+
+Try all of the above mentioned functions in this full example which prints out the measured temperature and humidity over Serial at 115200 baud:
+
+```cpp
+
+// Include libraries
+#include "LSM6DS3-SOLDERED.h"
+#include "Wire.h"
+
+// Create object from LSM library
+Soldered_LSM6DS3 myIMU; // Default address is 0x6B
+
+void setup()
+{
+    // Init serial communication
+    Serial.begin(115200);
+    delay(1000); // Relax...
+
+    // Call .begin() to configure the IMU
+    myIMU.begin();
+}
+
+void loop()
+{
+    // Get all parameters and print it on the Serial Monitor
+
+    // Read acceleration and print it on serial
+    Serial.print("ACCX:");
+    Serial.print(myIMU.readFloatAccelX(), 4);
+    Serial.print(",");
+    Serial.print("ACCY:");
+    Serial.print(myIMU.readFloatAccelY(), 4);
+    Serial.print(",");
+    Serial.print("ACCZ:");
+    Serial.print(myIMU.readFloatAccelZ(), 4);
+    Serial.print(",");
+
+    delay(150);
+
+}
+```
+<QuickLink 
+  title="minimalistExample.ino" 
+  description=" Most basic example of use. Example using the LSM6DS3 with basic settings"
+  url="https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/blob/main/examples/MinimalistExample/MinimalistExample.ino" 
+/>

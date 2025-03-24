@@ -5,7 +5,7 @@ id: lsm6ds3tr-how-it-works
 hide_title: False
 ---  
 
-The LSM6DS3 is a system in a package that combines a 3D digital accelerometer and a 3D digital gyroscope, allowing linear acceleration and rotational motion to be tracked in three dimensions.
+The Accelerometer & Gyroscope LSM6DS3 6-DOF is an integrated circuit by [**STMicroelectronics**](https://www.st.com/en/mems-and-sensors/lsm6ds3tr-c.html). Its all in a package that combines a 3D digital accelerometer and a 3D digital gyroscope, allowing linear acceleration and rotational motion to be tracked in three dimensions.
 
 <CenteredImage src="/img/lsm6ds3tr/LSM6DS36_onboard.png" alt="LSM6DS3 chip on the board" caption="LSM6DS3 chip on the board" width="400px" />
 ---
@@ -24,7 +24,7 @@ For an in-depth look at technical specifications, refer to the official LSM6DS3 
 
 ## How the accelerometer works  
 
-The **accelerometer** on this board works by reading the movement of its mass where its **movement coused by external force** input is then **transformed into readable input** that is transfered into data. It all works by containing a **tiny proof mass attached to a spring** within its casing. When acceleration occurs, the proof mass moves relative to the casing due to inertia, causing the spring to compress or stretch. This movement is **detected by capacitive or piezoresistive sensors**, which convert the **mechanical displacement into electrical signals**. These signals are then processed and amplified by onboard electronics to provide precise measurements of acceleration, supporting full-scale ranges from **±2 g to ±16 g**.  
+The **accelerometer** on this board works by reading the movement of its mass where its **movement coused by external force** input is then **transformed into readable input** that is transfered into data. It all works by containing a **tiny proof mass (body of mass) attached to a spring** within its casing. When acceleration occurs, the proof mass moves relative to the casing due to inertia, causing the spring to compress or stretch. This movement is **detected by capacitive or piezoresistive sensors**, which convert the **mechanical displacement into electrical signals**. These signals are then processed and amplified by onboard electronics to provide precise measurements of acceleration, supporting full-scale ranges from **±2 g to ±16 g**.  
 
 <CenteredImage src="/img/lsm6ds3tr/accelerometer.png" alt="SHTC3 sensor on board" caption="Visual representation of the accelerometer" width="400px" />
 
@@ -40,9 +40,9 @@ The **gyroscope** on this board works in a simular matter to the accelerometer w
 
 ## I2C communication  
 
-The SHTC3 uses the I2C protocol to communicate with a microcontroller. It operates with a fixed I2C address of **0x6A** and supports fast mode (400 kHz) for rapid data transmission.  
+The LSM6DS3TR-C uses the I2C protocol to communicate with a microcontroller. It operates with a default I2C address of **0x6B**, but this can be changed to **0x6A** by grounding the **SDO/SA0** pin which is further explained later on in the [**Address jumper**](/documentation/lsm6ds3tr/how-it-works) section. 
 
-Upon request, the sensor responds with two 16-bit values—one for humidity and one for temperature—along with a CRC checksum for data integrity.  
+The sensor also supports fast mode (400 kHz) for rapid data transmission where upon request, the sensor responds with multiple **16-bit** values—one for the **accelerometer**, one for the **gyroscope**, and one for **temperature**—along with an optional **CRC checksum** for data integrity. These values provide **precise motion tracking and environmental data**.
 
 ---
 

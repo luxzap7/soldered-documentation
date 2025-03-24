@@ -40,7 +40,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'LSM6DS3TR EDIT THIS NAME',
+          label: 'Accelerometer & Gyroscope LSM6DS3 6-DOF breakout',
           items: [
             {
               type: 'doc',
@@ -64,11 +64,22 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-6',
+                },
+                {
+                  type: 'doc',
                   id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-2',
                 },
                 {
                   type: 'doc',
                   id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-4',
+                },                {
+                  type: 'doc',
+                  id: 'sensors/lsm6ds3tr/arduino_library/lsm6ds3tr-arduino-5',
                 },
               ],
             },

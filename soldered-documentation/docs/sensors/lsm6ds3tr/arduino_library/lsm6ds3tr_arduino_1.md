@@ -9,9 +9,9 @@ hide_title: False
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
 <QuickLink  
-  title="Temperature and humidity sensor SHTC3 breakout Arduino library"  
-  description="SHTC3 Arduino library by Soldered"  
-  url="https://github.com/SolderedElectronics/Soldered-SHTC3-Temperature-Humidity-Sensor-Arduino-Library"  
+  title="Accelerometer & Gyroscope LSM6DS3 6-DOF breakout Arduino library"  
+  description="Soldered-LSM6DS3-Arduino-Library"  
+  url="https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library"  
 />  
 
 
@@ -49,3 +49,5 @@ If you prefer, you can use I2C pins to manually connect:
 | GND                      | GND                |
 
 </InfoBox>
+
+<WarningBox> The **IO21** and **IO22** pins can differ for your personally used board, so **make sure to validate** the information before you start working!</WarningBox>

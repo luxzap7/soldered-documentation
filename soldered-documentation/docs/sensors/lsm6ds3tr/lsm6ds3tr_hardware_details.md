@@ -78,15 +78,12 @@ This board contains hardware jumpers, see below for their locations and function
 | **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                         |
 | **JP3** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.          |
 | **JP4** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP3 is disconnected if JP4 is connected.** |
-| **JP5** | **NO** (Normally open)   |**Address jumper**(*More below) that alows swaping between 2 addresses. When connected also **grounds the SA pin and the 3.3V**.|
+| **JP5** | **NO** (Normally open)   |**Address jumper**(*More below) that alows swaping between 2 addresses. |
 
 ---
+## Address jumper
 
-## Address Jumper
-
-As mention before the **JP5** is a **address jumper** that when left **open** has the address of **0x6B** while if closed its address changes to **0x6A**
-
-**Address jumper** is a **Jumper** that allows the user to choose which adress is used. In this example if left **open** the used address is **0x6B** while if **closed** we start using **0x6B**
+As mention before the **JP5** is a **address jumper** that when left **open** has the address of **0x6B** , while when closed its address changes to **0x6A**.
 
 ---
 ## Hardware repository
