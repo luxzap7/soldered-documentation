@@ -31,7 +31,7 @@ void setup()
     // Call .begin() to configure the IMU
     myIMU.begin();
 }
-
+//...
 ```
 ---
 

@@ -5,7 +5,7 @@ id: lsm6ds3tr-how-it-works
 hide_title: False
 ---  
 
-The Accelerometer & Gyroscope LSM6DS3 6-DOF is an integrated circuit by [**STMicroelectronics**](https://www.st.com/en/mems-and-sensors/lsm6ds3tr-c.html). Its all in a package that combines a 3D digital accelerometer and a 3D digital gyroscope, allowing linear acceleration and rotational motion to be tracked in three dimensions.
+The **Accelerometer & Gyroscope LSM6DS3 6-DOF** is an integrated circuit by [**STMicroelectronics**](https://www.st.com/en/mems-and-sensors/lsm6ds3tr-c.html). Its all in a package that combines a 3D digital accelerometer and a 3D digital gyroscope, allowing linear acceleration and rotational motion to be tracked in three dimensions.
 
 <CenteredImage src="/img/lsm6ds3tr/LSM6DS36_onboard.png" alt="LSM6DS3 chip on the board" caption="LSM6DS3 chip on the board" width="400px" />
 ---
@@ -15,7 +15,7 @@ The Accelerometer & Gyroscope LSM6DS3 6-DOF is an integrated circuit by [**STMic
 For an in-depth look at technical specifications, refer to the official LSM6DS3 6-DOF Datasheet:  
 
 <QuickLink  
-  title="LSM6DS3 6-DOF Datasheet"  
+  title="LSM6DS3 6-DOF breakout Datasheet"  
   description="Detailed technical documentation for the LSM6DS3 6-DOF Accelerometer & Gyroscope"  
   url="https://soldered.com/productdata/2023/08/Soldered_LSM6DS3_datasheet.pdf"  
 />  
@@ -26,7 +26,7 @@ For an in-depth look at technical specifications, refer to the official LSM6DS3 
 
 The **accelerometer** on this board works by reading the movement of its mass where its **movement coused by external force** input is then **transformed into readable input** that is transfered into data. It all works by containing a **tiny proof mass (body of mass) attached to a spring** within its casing. When acceleration occurs, the proof mass moves relative to the casing due to inertia, causing the spring to compress or stretch. This movement is **detected by capacitive or piezoresistive sensors**, which convert the **mechanical displacement into electrical signals**. These signals are then processed and amplified by onboard electronics to provide precise measurements of acceleration, supporting full-scale ranges from **±2 g to ±16 g**.  
 
-<CenteredImage src="/img/lsm6ds3tr/accelerometer.png" alt="SHTC3 sensor on board" caption="Visual representation of the accelerometer" width="400px" />
+<CenteredImage src="/img/lsm6ds3tr/accelerometer.png" alt="lsm6ds3tr accelerometer" caption="Visual representation of the accelerometer" width="400px" />
 
 ---
 
@@ -34,7 +34,7 @@ The **accelerometer** on this board works by reading the movement of its mass wh
 
 The **gyroscope** on this board works in a simular matter to the accelerometer with a simple difference that it works by **contain tiny vibrating structures** that move due to the **Coriolis force** when **rotation occurs**. This movement is detected by **capacitive or piezoresistive sensors**, which **convert the mechanical displacement** into **electrical signals**. These signals are then processed and amplified by onboard electronics to provide precise measurements of angular rate, supporting full-scale ranges from **±125 dps to ±2000 dps**. The gyroscope's operation is based on **MEMS technology**, ensuring high precision and low power consumption, making it suitable for applications such as drone stabilization and robotics. The gyroscope's design allows for efficient data management and low power modes, ensuring optimal performance without significant energy consumption.
 
-<CenteredImage src="/img/lsm6ds3tr/gyroscope.png" alt="SHTC3 sensor on board" caption="Visual representation of the gyroscope" width="400px" />
+<CenteredImage src="/img/lsm6ds3tr/gyroscope.png" alt="lsm6ds3tr gyroscope" caption="Visual representation of the gyroscope" width="400px" />
 
 ---
 

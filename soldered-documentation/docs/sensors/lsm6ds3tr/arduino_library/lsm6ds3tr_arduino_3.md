@@ -40,6 +40,7 @@ if (!myIMU.begin())
 
 Serial.println("LSM6DS3 initialized successfully.");
 }
+//...
 ```
 
 <FunctionDocumentation

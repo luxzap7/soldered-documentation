@@ -23,7 +23,7 @@ It also includes **2 Qwiic (formerly easyC) connectors**, making it easy to conn
   title="Accelerometer & Gyroscope LSM6DS3 6-DOF breakout" 
   description="333115"
   url="https://soldered.com/product/accelerometer-gyroscope-lsm6ds3-6-dof-breakout/"
-  image="/img/shtc3/333032.jpg" 
+  image="/img/lsm6ds3tr/333115.jpg" 
 />
 
 
@@ -40,7 +40,7 @@ It also includes **2 Qwiic (formerly easyC) connectors**, making it easy to conn
   - **High-performance mode:** 1.25mA   
 - **Logic voltage level:** 1.71V to 3.6V  
 - **Operating voltage:** 3.3V (onboard regulator for 5V compatibility)  
-- **Communication:** SPI and I2C (fixed address: 0x70)  
+- **Communication:**I2C (fixed address: 0x6A)  
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
 - **Mounting:** **Two mounting holes** for secure attachment  
 - **Dimensions:** **2.5 mm × 3 mm x 0.83 mm**  (0.09 x 0.11 x 0.03 inch) 
