@@ -40,6 +40,43 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'SLIDER-POTENTIOMETER',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/slider-potentiometer/slider-potentiometer-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/slider-potentiometer/slider-potentiometer-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/slider-potentiometer/slider-potentiometer-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/slider-potentiometer/arduino_library/slider-potentiometer-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/slider-potentiometer/arduino_library/slider-potentiometer-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/slider-potentiometer/arduino_library/slider-potentiometer-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
           label: 'Accelerometer & Gyroscope & Magnetometer LSM9DS1TR 9-DOF breakout',
           items: [
             {
@@ -92,7 +129,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Accelerometer & Gyroscope LSM6DS3 6-DOF breakout',
+          label: 'Accelerometer & Gyroscope LSM6DS 6-DOF breakout',
           items: [
             {
               type: 'doc',
