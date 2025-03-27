@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: '125KHZRFIDTAGREADER EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/125khzrfidtagreader/125khzrfidtagreader-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/125khzrfidtagreader/125khzrfidtagreader-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/125khzrfidtagreader/125khzrfidtagreader-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/125khzrfidtagreader/arduino_library/125khzrfidtagreader-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/125khzrfidtagreader/arduino_library/125khzrfidtagreader-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/125khzrfidtagreader/arduino_library/125khzrfidtagreader-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SLIDER-POTENTIOMETER',
           items: [
             {
