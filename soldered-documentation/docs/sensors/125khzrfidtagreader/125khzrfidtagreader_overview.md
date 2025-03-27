@@ -35,8 +35,8 @@ The **125kHz RFID Reader** is a device that enables wireless identification of o
 ##  Key Features
     
 *   **Frequency:** 125 kHz  
-*   **Reading distance:** up to 10 cm
-*   **Communication:** I2C,UART
+*   **Reading distance:** up to 5 cm
+*   **Communication:** I2C,UART (depends on device version)
 *   **Operating voltage:** 5V (±5%)
 *   **Supported tags:** EM4100, EM4001, or compatible 125 kHz RFID cards/tags
 *   **Dimensions:** 38 x 38 mm (1.5 x 1.5 inch)

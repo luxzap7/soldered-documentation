@@ -8,14 +8,7 @@ hide_title: False
 The **Slider Potentiometer Breakout** is a versatile module designed for manual resistance adjustment in various applications, such as audio equipment, robotics, and other control systems. It provides two independent analog outputs for seamless integration into your projects.
 When using the **Qwiic** version you are essentialy communicating with an onboard **ATTINY404 MCU** via **I2C communication**.
 
-<FlickityCarousel
-  images={[
-    { src: '/img/slider-potentiometer/333130.jpg', alt: 'slider 1', caption: 'Slider potentiometer' },
-    { src: '/img/slider-potentiometer/333131.jpg', alt: 'slider 2', caption: 'Slider potentiometer (QWICC)' },
-    { src: '/img/slider-potentiometer/333131_chip.jpg', alt: 'slider 2', caption: 'ATTINY 404 MCU Chip' },
-  ]}
-  potentiometers={true}
-/>
+<CenteredImage src="/img/slider-potentiometer/333131_chip.jpg" alt="ATTINY404 MCU chip on the board" caption="ATTINY404 MCU chip on the board" width="400px" />
 
 ---
 ## I2C communication - Qwiic

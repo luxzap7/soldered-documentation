@@ -40,7 +40,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: '125KHZRFIDTAGREADER EDIT THIS NAME',
+          label: '125KHz RFID TAG READER',
           items: [
             {
               type: 'doc',
